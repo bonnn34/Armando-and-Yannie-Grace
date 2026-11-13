@@ -4,7 +4,8 @@ import { useEffect, useState, type ReactNode } from "react"
 import Link from "next/link"
 import { Download, ExternalLink } from "lucide-react"
 import { QRCodeCanvas } from "qrcode.react"
-import { Cinzel, Playfair_Display } from "next/font/google"
+import { Cinzel } from "next/font/google"
+import { playfair } from "@/lib/playfair-font"
 import localFont from "next/font/local"
 import { useSiteConfig } from "@/hooks/use-site-config"
 import { useQrColors } from "@/hooks/use-css-color"
@@ -15,11 +16,6 @@ const cinzel = Cinzel({
   weight: ["400", "600", "700"],
 })
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-  style: ["italic"],
-})
 
 const theSeasons = localFont({
   src: "../Font/Fontspring-DEMO-theseasons-reg.otf",
