@@ -13,13 +13,12 @@ import {
   Globe,
   X,
 } from "lucide-react"
-import { Cinzel } from "next/font/google"
+import { cinzel } from "@/lib/site-fonts"
 import { playfair } from "@/lib/playfair-font"
 import { cn } from "@/lib/utils"
 import { useSiteConfig } from "@/hooks/use-site-config"
 import { normalizeWeddingDateString } from "@/lib/wedding-date"
 
-const cinzel = Cinzel({ subsets: ["latin"], weight: ["500", "600"] })
 
 const DAY_MS = 24 * 60 * 60 * 1000
 

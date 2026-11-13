@@ -1,7 +1,7 @@
 "use client"
 
 import { type ReactNode } from "react"
-import { Cinzel } from "next/font/google"
+import { cinzel } from "@/lib/site-fonts"
 import { playfair } from "@/lib/playfair-font"
 import {
   ArrowRight,
@@ -19,7 +19,6 @@ import {
 } from "lucide-react"
 import { TableFinderQrCard } from "@/components/table-finder-qr-card"
 
-const cinzel = Cinzel({ subsets: ["latin"], weight: ["500", "600"] })
 
 export type DashboardTab = "dashboard" | "guests" | "requests" | "messages" | "entourage" | "proposals"
 

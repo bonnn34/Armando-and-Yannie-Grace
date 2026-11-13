@@ -4,12 +4,8 @@ import { Section } from "@/components/section"
 import { useSiteConfig } from "@/hooks/use-site-config"
 import Stack from "@/components/stack"
 import { motion } from "motion/react"
-import { Cormorant_Garamond } from "next/font/google"
+import { cormorant } from "@/lib/site-fonts"
 
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-})
 
 export function Narrative() {
   const siteConfig = useSiteConfig()

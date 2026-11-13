@@ -17,7 +17,7 @@ import Link from "next/link"
 import { motion, AnimatePresence, useReducedMotion, type Variants } from "motion/react"
 import { Heart, Check, X, Sparkles } from "lucide-react"
 import localFont from "next/font/local"
-import { Cinzel } from "next/font/google"
+import { cinzel } from "@/lib/site-fonts"
 import { playfair } from "@/lib/playfair-font"
 import { ProposalMixedText, proposalMixedTextInter } from "@/lib/proposal-mixed-text"
 import { useSiteConfig } from "@/hooks/use-site-config"
@@ -51,10 +51,6 @@ const headerItem: Variants = {
   show: { opacity: 1, y: 0, filter: "blur(0px)", transition: { duration: 0.9, ease: revealEase } },
 }
 
-const cinzel = Cinzel({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-})
 
 
 const inter = proposalMixedTextInter

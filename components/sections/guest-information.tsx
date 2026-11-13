@@ -3,18 +3,10 @@
 import { Section } from "@/components/section"
 import { useSiteConfig } from "@/hooks/use-site-config"
 import { Car, Navigation, MapPin } from "lucide-react"
-import { Cormorant_Garamond, Cinzel } from "next/font/google"
+import { cormorant, cinzel } from "@/lib/site-fonts"
 import Image from "next/image"
 
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["400"],
-})
 
-const cinzel = Cinzel({
-  subsets: ["latin"],
-  weight: "400",
-})
 
 // Guest information color palette
 const GUEST_LIGHT = "#C1AC94"   // light beige/nude

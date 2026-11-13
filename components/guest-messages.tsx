@@ -1,12 +1,11 @@
 "use client"
 
 import { useMemo, useState } from "react"
-import { Cinzel } from "next/font/google"
+import { cinzel } from "@/lib/site-fonts"
 import { playfair } from "@/lib/playfair-font"
 import { ArrowDownUp, Check, Clock, Copy, Heart, MessageSquare, Quote, RefreshCw, Search } from "lucide-react"
 import { type Message } from "@/app/api/messages/route"
 
-const cinzel = Cinzel({ subsets: ["latin"], weight: ["500", "600"] })
 
 /** Messages longer than this are clamped with a "Read more" toggle. */
 const LONG_MESSAGE = 220

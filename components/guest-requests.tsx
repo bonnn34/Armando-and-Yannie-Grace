@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState, type ReactNode } from "react"
-import { Cinzel } from "next/font/google"
+import { cinzel } from "@/lib/site-fonts"
 import { playfair } from "@/lib/playfair-font"
 import { useBodyScrollLock } from "@/hooks/use-body-scroll-lock"
 import { Button } from "@/components/ui/button"
@@ -26,7 +26,6 @@ import {
   XCircle,
 } from "lucide-react"
 
-const cinzel = Cinzel({ subsets: ["latin"], weight: ["500", "600"] })
 
 const MIN_SEATS = 1
 const MAX_SEATS = 20
