@@ -3451,13 +3451,13 @@
    Sunshine yellow is used once — the glowing dot on the progress bar.
    ========================================================================== */
 .loading-screen--plain {
-  --ls-sky: var(--color-motif-medium);          /* #9A9294 */
-  --ls-blue: var(--color-welcome-heading);      /* #4F6578 */
-  --ls-navy: var(--color-welcome-navy);         /* #2E2A2B */
-  --ls-ink: var(--color-welcome-text);          /* #4A4546 */
-  --ls-leaf: var(--color-motif-yellow);         /* #9A9294 sage */
-  --ls-leaf-ink: color-mix(in srgb, var(--color-motif-yellow) 78%, #3C4424);
-  --ls-sun: var(--color-motif-accent);          /* #4F6578 */
+  --ls-sky: var(--color-motif-medium);          /* #A8C4DD */
+  --ls-blue: var(--color-welcome-heading);      /* #344B63 */
+  --ls-navy: var(--color-welcome-navy);         /* #344B63 */
+  --ls-ink: var(--color-welcome-text);          /* #344B63 */
+  --ls-leaf: var(--color-motif-yellow);         /* #A8C4DD sage */
+  --ls-leaf-ink: color-mix(in srgb, var(--color-motif-yellow) 78%, #344B63);
+  --ls-sun: var(--color-motif-accent);          /* #344B63 */
 
   --ls-text-dark: var(--ls-ink);
   --ls-text-accent-dark: var(--ls-blue);
@@ -3565,12 +3565,12 @@
    holds up over bright frames. Sage + sunshine appear only as accents.
    ========================================================================== */
 .home-hero--plain {
-  --hh-navy: var(--color-welcome-navy);       /* #2E2A2B */
-  --hh-blue: var(--color-welcome-heading);    /* #4F6578 */
-  --hh-ink: var(--color-welcome-text);        /* #4A4546 */
-  --hh-sky: var(--color-motif-medium);        /* #9A9294 */
-  --hh-leaf: var(--color-motif-yellow);       /* #9A9294 */
-  --hh-butter: var(--color-motif-silver);     /* #EBCBCF */
+  --hh-navy: var(--color-welcome-navy);       /* #344B63 */
+  --hh-blue: var(--color-welcome-heading);    /* #344B63 */
+  --hh-ink: var(--color-welcome-text);        /* #344B63 */
+  --hh-sky: var(--color-motif-medium);        /* #A8C4DD */
+  --hh-leaf: var(--color-motif-yellow);       /* #A8C4DD */
+  --hh-butter: var(--color-motif-silver);     /* #E9CAD2 */
   /* Tight white edge: keeps thin strokes crisp instead of washing them out */
   --hh-edge:
     0 0 1px rgb(255 255 255 / 100%),
@@ -3668,12 +3668,12 @@
 }
 
 .home-hero--plain .home-hero-countdown-heading {
-  color: #F8F3F1;
+  color: #F8F5F2;
   text-shadow: 0 1px 8px color-mix(in srgb, var(--hh-navy) 70%, transparent);
 }
 
 .home-hero--plain .home-hero-countdown-value {
-  color: #F8F3F1;
+  color: #F8F5F2;
   text-shadow: 0 2px 10px color-mix(in srgb, var(--hh-navy) 65%, transparent);
 }
 
@@ -3696,9 +3696,9 @@
   transform: translate(-50%, -50%);
   background: radial-gradient(
     ellipse at center,
-    rgb(248 243 241 / 62%) 0%,
-    rgb(248 243 241 / 45%) 40%,
-    rgb(248 243 241 / 15%) 60%,
+    rgb(248 245 242 / 62%) 0%,
+    rgb(248 245 242 / 45%) 40%,
+    rgb(248 245 242 / 15%) 60%,
     transparent 74%
   );
 }
@@ -3763,7 +3763,7 @@
   color: var(--hh-blue);
   -webkit-text-fill-color: var(--hh-blue);
   -webkit-text-stroke: 0;
-  filter: drop-shadow(0 1px 0 rgb(248 243 241 / 80%));
+  filter: drop-shadow(0 1px 0 rgb(248 245 242 / 80%));
 }
 
 /* Time in spaced small caps, venue in italic serif */
@@ -3936,7 +3936,7 @@
 }
 
 .story-open-divider svg {
-  filter: drop-shadow(0 1px 0 rgb(248 243 241 / 80%));
+  filter: drop-shadow(0 1px 0 rgb(248 245 242 / 80%));
 }
 
 /* Phones: slightly smaller body so long paragraphs sit comfortably beside the photo */
@@ -3950,17 +3950,17 @@
    ========================================================================== */
 .loading-screen--plain {
   --ls-blush: #E9CAD2;
-  --ls-pastel: #F8F3F1;
-  --ls-ivory: #F8F3F1;
-  --ls-burgundy: #172D4E;
-  --ls-rose: #C58F9D;
-  --ls-rose-ink: #C58F9D;
-  --ls-sage: #D4B47C;
+  --ls-pastel: #DCEAF4;
+  --ls-ivory: #F8F5F2;
+  --ls-burgundy: #344B63;
+  --ls-rose: #D696A5;
+  --ls-rose-ink: #D696A5;
+  --ls-sage: #A8C4DD;
 
   --ls-sky: var(--ls-rose);
   --ls-blue: var(--ls-rose-ink);
   --ls-navy: var(--ls-burgundy);
-  --ls-ink: #172D4E;
+  --ls-ink: #344B63;
   --ls-leaf: var(--ls-sage);
   --ls-leaf-ink: var(--ls-rose);
   --ls-sun: var(--ls-rose);
@@ -3971,11 +3971,11 @@
 
 .loading-screen--plain .loading-screen__save-date {
   background:
-    radial-gradient(85% 38% at 50% 0%, rgb(248 243 241 / 90%) 0%, transparent 72%) padding-box,
+    radial-gradient(85% 38% at 50% 0%, rgb(248 245 242 / 90%) 0%, transparent 72%) padding-box,
     linear-gradient(180deg, var(--ls-ivory) 0%, var(--ls-ivory) 55%, color-mix(in srgb, var(--ls-blush) 55%, var(--ls-ivory)) 100%) padding-box,
-    linear-gradient(180deg, rgb(248 243 241 / 95%) 0%, color-mix(in srgb, var(--ls-rose) 45%, #F8F3F1) 100%) border-box;
+    linear-gradient(180deg, rgb(248 245 242 / 95%) 0%, color-mix(in srgb, var(--ls-rose) 45%, #F8F5F2) 100%) border-box;
   box-shadow:
-    0 0 0 6px rgb(248 243 241 / 45%),
+    0 0 0 6px rgb(248 245 242 / 45%),
     0 30px 60px -30px color-mix(in srgb, var(--ls-burgundy) 22%, transparent),
     0 10px 24px -16px color-mix(in srgb, var(--ls-rose) 40%, transparent);
 }
@@ -4012,7 +4012,7 @@
 }
 
 .loading-screen--plain .ls-plain-glow {
-  background: radial-gradient(55% 45% at 50% 50%, rgb(248 243 241 / 55%) 0%, transparent 70%);
+  background: radial-gradient(55% 45% at 50% 50%, rgb(248 245 242 / 55%) 0%, transparent 70%);
 }
 
 /* Petals: fewer, softer */
@@ -4028,14 +4028,14 @@
    Desktop: photo left, wording right.
    ========================================================================== */
 .home-hero--plain {
-  --hh-navy: #172D4E;
-  --hh-blue: #C58F9D;
-  --hh-ink: #172D4E;
-  --hh-sky: #E9CAD2;
-  --hh-leaf: #D4B47C;
+  --hh-navy: #344B63;
+  --hh-blue: #D696A5;
+  --hh-ink: #344B63;
+  --hh-sky: #DCEAF4;
+  --hh-leaf: #A8C4DD;
   --hh-butter: #E9CAD2;
   --hh-edge: none;
-  background: #F8F3F1;
+  background: #F8F5F2;
 }
 
 .home-hero--plain .home-hero-title-main,
@@ -4046,8 +4046,8 @@
 }
 
 .home-hero--plain .home-hero-title-script {
-  color: #C58F9D;
-  -webkit-text-fill-color: #C58F9D;
+  color: #D696A5;
+  -webkit-text-fill-color: #D696A5;
   text-shadow: none;
 }
 
@@ -4095,7 +4095,7 @@
   aspect-ratio: 3 / 4;
   width: calc(100% + 18px);
   border-radius: 999px 999px 22px 22px;
-  border: 1px solid color-mix(in srgb, #D4B47C 55%, transparent);
+  border: 1px solid color-mix(in srgb, #A8C4DD 55%, transparent);
   pointer-events: none;
 }
 
@@ -4106,11 +4106,11 @@
   overflow: hidden;
   border-radius: 999px 999px 16px 16px;
   background: #E9CAD2;
-  border: 5px solid #F8F3F1;
+  border: 5px solid #F8F5F2;
   box-shadow:
-    0 0 0 1px color-mix(in srgb, #D4B47C 35%, transparent),
-    0 30px 55px -30px color-mix(in srgb, #172D4E 40%, transparent),
-    0 10px 24px -14px color-mix(in srgb, #D4B47C 45%, transparent);
+    0 0 0 1px color-mix(in srgb, #A8C4DD 35%, transparent),
+    0 30px 55px -30px color-mix(in srgb, #344B63 40%, transparent),
+    0 10px 24px -14px color-mix(in srgb, #A8C4DD 45%, transparent);
 }
 
 /* Soft blush vignette at the base so the photo melts into the frame */
@@ -4120,7 +4120,7 @@
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  background: linear-gradient(180deg, transparent 72%, color-mix(in srgb, #F8F3F1 35%, transparent) 100%);
+  background: linear-gradient(180deg, transparent 72%, color-mix(in srgb, #F8F5F2 35%, transparent) 100%);
 }
 
 /* Natural colour, only the faintest warm lift — no heavy filter */
@@ -4140,7 +4140,7 @@
   aspect-ratio: 2170 / 725;
   margin: -1.6rem auto 0;
   background: url("/deco/new-deco/small-center.png") center / contain no-repeat;
-  filter: drop-shadow(0 4px 6px color-mix(in srgb, #172D4E 15%, transparent));
+  filter: drop-shadow(0 4px 6px color-mix(in srgb, #344B63 15%, transparent));
 }
 
 @media (min-width: 768px) {
@@ -4177,8 +4177,8 @@
 }
 
 .loading-screen--plain .ls-headline__letter {
-  color: #172D4E;
-  -webkit-text-fill-color: #172D4E;
+  color: #344B63;
+  -webkit-text-fill-color: #344B63;
 }
 
 .ls-headline__break {
@@ -4228,14 +4228,14 @@
   /* Translucent light white-warm-gray wash: the circle pattern (PlainBubbles)
      behind the section shows through softly */
   background:
-    radial-gradient(90% 16% at 50% 0%, rgb(248 243 241 / 65%) 0%, transparent 70%),
+    radial-gradient(90% 16% at 50% 0%, rgb(248 245 242 / 65%) 0%, transparent 70%),
     radial-gradient(60% 14% at 0% 30%, color-mix(in srgb, #E9CAD2 30%, transparent) 0%, transparent 70%),
-    radial-gradient(60% 14% at 100% 62%, color-mix(in srgb, #E9CAD2 26%, transparent) 0%, transparent 70%),
+    radial-gradient(60% 14% at 100% 62%, color-mix(in srgb, #DCEAF4 26%, transparent) 0%, transparent 70%),
     linear-gradient(
       180deg,
-      rgb(248 243 241 / 58%) 0%,
-      color-mix(in srgb, #F8F3F1 52%, transparent) 50%,
-      rgb(248 243 241 / 50%) 100%
+      rgb(248 245 242 / 58%) 0%,
+      color-mix(in srgb, #F8F5F2 52%, transparent) 50%,
+      rgb(248 245 242 / 50%) 100%
     );
 }
 
@@ -4260,8 +4260,8 @@
   border: 1.5px solid color-mix(in srgb, var(--color-motif-medium) 70%, transparent);
   border-radius: 6px;
   box-shadow:
-    inset 0 0 0 1px color-mix(in srgb, #F8F3F1 45%, transparent),
-    0 0 0 1px color-mix(in srgb, #F8F3F1 30%, transparent);
+    inset 0 0 0 1px color-mix(in srgb, #F8F5F2 45%, transparent),
+    0 0 0 1px color-mix(in srgb, #F8F5F2 30%, transparent);
 }
 
 .love-story-frame::after {
@@ -4296,7 +4296,7 @@
   font-size: clamp(0.95rem, 1vw + 0.7rem, 1.1rem);
   line-height: 1.7;
   color: var(--color-welcome-text);
-  text-shadow: 0 0 8px rgb(248 243 241 / 75%);
+  text-shadow: 0 0 8px rgb(248 245 242 / 75%);
 }
 
 /* blush-pink wash behind each chapter on the photo's side */
@@ -4314,31 +4314,31 @@
 
 .story-open-wash--left {
   left: -18%;
-  background: radial-gradient(closest-side, color-mix(in srgb, #C58F9D 30%, transparent) 0%, color-mix(in srgb, #E9CAD2 50%, transparent) 55%, transparent 100%);
+  background: radial-gradient(closest-side, color-mix(in srgb, #D696A5 30%, transparent) 0%, color-mix(in srgb, #E9CAD2 50%, transparent) 55%, transparent 100%);
 }
 
 .story-open-wash--right {
   right: -18%;
-  background: radial-gradient(closest-side, color-mix(in srgb, #C58F9D 30%, transparent) 0%, color-mix(in srgb, #E9CAD2 50%, transparent) 55%, transparent 100%);
+  background: radial-gradient(closest-side, color-mix(in srgb, #D696A5 30%, transparent) 0%, color-mix(in srgb, #E9CAD2 50%, transparent) 55%, transparent 100%);
 }
 
 /* Text colors (loading screen palette): charcoal title, slate details, warm-gray rule */
 .story-open-date {
-  color: #C58F9D;
+  color: #D696A5;
 }
 
 .story-open-title {
-  color: #172D4E;
-  text-shadow: 0 1px 0 rgb(248 243 241 / 85%);
+  color: #344B63;
+  text-shadow: 0 1px 0 rgb(248 245 242 / 85%);
 }
 
 .story-open-rule {
-  background: #D4B47C;
+  background: #A8C4DD;
 }
 
 .story-open-text {
-  color: #172D4E;
-  text-shadow: 0 0 8px rgb(248 243 241 / 75%);
+  color: #344B63;
+  text-shadow: 0 0 8px rgb(248 245 242 / 75%);
 }
 
 .story-open-number {
@@ -4347,10 +4347,10 @@
 
 /* Photo frame: light paper mat with a warm-gray edge */
 .story-open-photo {
-  background: #F8F3F1;
+  background: #F8F5F2;
   box-shadow:
-    0 0 0 1px color-mix(in srgb, #D4B47C 35%, transparent),
-    0 18px 34px -16px color-mix(in srgb, #172D4E 32%, transparent);
+    0 0 0 1px color-mix(in srgb, #A8C4DD 35%, transparent),
+    0 18px 34px -16px color-mix(in srgb, #344B63 32%, transparent);
 }
 
 
@@ -4421,7 +4421,7 @@
   margin: -1.9rem auto 0;
   user-select: none;
   pointer-events: none;
-  filter: drop-shadow(0 4px 6px color-mix(in srgb, #4A4546 15%, transparent));
+  filter: drop-shadow(0 4px 6px color-mix(in srgb, #344B63 15%, transparent));
 }
 
 
@@ -4442,5 +4442,5 @@
   letter-spacing: 0.22em;
   line-height: 1.3;
   text-transform: uppercase;
-  color: #be6174;
+  color: #344B63;
 }

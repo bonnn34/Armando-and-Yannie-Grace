@@ -20,11 +20,11 @@ const theSeasons = localFont({
 })
 
 const BURGUNDY = "var(--color-welcome-navy)"
-const ROSE = "#C58F9D"
-const INK = "#172D4E" // soft cocoa for the long verse line — gentler than burgundy, still high contrast
+const ROSE = "#D696A5"
+const INK = "#344B63" // soft cocoa for the long verse line — gentler than burgundy, still high contrast
 const QUOTE_MARK = "color-mix(in srgb, #E9CAD2 70%, transparent)"
 // Soft ivory edge keeps burgundy text crisp over pink or photos
-const glow = "0 1px 0 rgb(248 243 241 / 90%), 0 0 14px rgb(248 243 241 / 85%)"
+const glow = "0 1px 0 rgb(248 245 242 / 90%), 0 0 14px rgb(248 245 242 / 85%)"
 
 // Two looks: burgundy on light pink (love story) or ivory over photos (Snap & Share banner)
 const TONES = {
@@ -34,19 +34,19 @@ const TONES = {
     lead: BURGUNDY,
     body: INK,
     mark: QUOTE_MARK,
-    rule: "#D4B47C",
+    rule: "#A8C4DD",
     shadow: glow,
   },
   light: {
-    title: "#FBF7F5",
-    accent: "#DCE3EC",
-    lead: "#FBF7F5",
+    title: "#F8F5F2",
+    accent: "#DCEAF4",
+    lead: "#F8F5F2",
     body: "rgb(247 244 239 / 94%)",
     mark: "rgb(220 227 236 / 75%)",
     rule: "rgb(220 227 236 / 85%)",
     // Layered burgundy shadow: crisp edge plus a soft halo so ivory reads on any photo
     shadow:
-      "0 1px 2px rgb(31 45 58 / 85%), 0 2px 8px rgb(31 45 58 / 60%), 0 0 22px rgb(31 45 58 / 45%)",
+      "0 1px 2px rgb(52 75 99 / 85%), 0 2px 8px rgb(52 75 99 / 60%), 0 0 22px rgb(52 75 99 / 45%)",
   },
 } as const
 
@@ -141,7 +141,7 @@ export function PuhonBanner() {
       className="relative isolate overflow-hidden rounded-[1.5rem] sm:rounded-[2rem]"
       style={{
         boxShadow:
-          "0 0 0 1px color-mix(in srgb, #9A9294 45%, transparent), 0 0 0 6px rgb(247 244 239 / 35%), 0 26px 50px -28px color-mix(in srgb, #4A4546 45%, transparent)",
+          "0 0 0 1px color-mix(in srgb, #A8C4DD 45%, transparent), 0 0 0 6px rgb(247 244 239 / 35%), 0 26px 50px -28px color-mix(in srgb, #344B63 45%, transparent)",
       }}
     >
       {images.map((src, i) => (
@@ -172,7 +172,7 @@ export function PuhonBanner() {
         className="absolute inset-0 -z-10"
         style={{
           background:
-            "radial-gradient(85% 70% at 50% 50%, rgb(31 45 58 / 52%) 0%, rgb(74 69 70 / 34%) 60%, rgb(74 69 70 / 22%) 100%), linear-gradient(180deg, rgb(74 69 70 / 10%) 0%, rgb(31 45 58 / 25%) 100%)",
+            "radial-gradient(85% 70% at 50% 50%, rgb(52 75 99 / 52%) 0%, rgb(52 75 99 / 34%) 60%, rgb(52 75 99 / 22%) 100%), linear-gradient(180deg, rgb(52 75 99 / 10%) 0%, rgb(52 75 99 / 25%) 100%)",
         }}
       />
       <PuhonText tone="light" className="px-5 py-14 sm:px-10 sm:py-20 md:py-24" />
