@@ -1,6 +1,5 @@
 "use client"
 
-import { RisingHearts } from "@/components/rising-hearts"
 import "@/components/loader/loading-screen.css"
 
 type SectionBackdropProps = {
@@ -15,7 +14,7 @@ type SectionBackdropProps = {
 /**
  * Shared section background, laid over the circle pattern (PlainBubbles):
  * the love story's soft pink paper wash + grain (loading-screen.css → .love-story-bg)
- * and small pink hearts rising from top to bottom (rising-hearts.tsx).
+ * without animated hearts.
  * Replaces the old `.section-wash` overlay. Put it right after <PlainBubbles />.
  */
 export function SectionBackdrop({ wash = true, overlay = false }: SectionBackdropProps) {
@@ -27,7 +26,6 @@ export function SectionBackdrop({ wash = true, overlay = false }: SectionBackdro
       <div className="love-story-bg" style={wash ? undefined : { background: "none" }}>
         <span className="love-story-bg__grain" />
       </div>
-      <RisingHearts dense fill={!overlay} />
     </div>
   )
 }

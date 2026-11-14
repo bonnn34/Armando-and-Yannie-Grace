@@ -8,7 +8,7 @@ import Image from "next/image"
 import { TornPaperEdge } from "./TornPaperEdge"
 import { TintedDeco } from "@/components/tinted-deco"
 import { StoryGlyphText } from "@/lib/story-glyph-text"
-import { RisingHearts, HEART_PATH } from "@/components/rising-hearts"
+import { HEART_PATH } from "@/components/rising-hearts"
 
 const theSeasons = localFont({
   src: "../Font/Fontspring-DEMO-theseasons-reg.otf",
@@ -122,7 +122,6 @@ function PlainOpenChapter({
     <div className={`${theSeasons.variable} story-open relative z-[2] px-5 sm:px-8 md:px-10`}>
       {/* Soft powder-blue wash behind each chapter, on the photo's side */}
       <span className={`story-open-wash ${photoLeft ? "story-open-wash--left" : "story-open-wash--right"}`} aria-hidden />
-      <RisingHearts />
       <div
         className={`relative mx-auto flex max-w-5xl items-center gap-5 py-10 sm:gap-10 sm:py-14 md:gap-14 md:py-16 ${
           photoLeft ? "flex-row" : "flex-row-reverse"

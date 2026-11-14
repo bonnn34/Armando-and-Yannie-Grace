@@ -351,19 +351,19 @@ const MARQUEE_PHOTOS_DESKTOP = Array.from(
 )
 
 // ── Decorations ─────────────────────────────────────────────────────────────
-// Change a path here to swap it on every section at once.
+// Floral artwork is hidden throughout the site; add a path to show it again.
 // To change ONE section only, override it there, e.g. decos: { ...SECTION_DECOS, footerVine: "" }
 const DECOR = {
-  cornerTopLeft: "/deco/lovestorydeco/corner-top-l.png", // floral corner tucked under the top vines (loader + envelope)
-  cornerTopRight: "/deco/lovestorydeco/corner-top-r.png",
-  cornerBottomLeft: "/deco/lovestorydeco/corner-bottom-l.png",
-  cornerBottomRight: "/deco/lovestorydeco/corner-bottom-r.png",
-  cornerOverlayTopLeft: "/deco/cornerOverlayTopLeft.png", // floral corner layered over the top vines (loader + envelope)
-  cornerOverlayTopRight: "/deco/cornerOverlayTopRight.png",
-  headerOrnament: "/deco/lovestorydeco/ornament middle.png", // small sprig above titles
-  footerVine: "/deco/footerVine.png", // long vine at section ends
-  sideLeft: "/deco/lovestorydeco/Elegant-Eucalyptus-Left.png", // love story side sprigs
-  sideRight: "/deco/lovestorydeco/Elegant-Eucalyptus-Right.png",
+  cornerTopLeft: "", // floral corner tucked under the top vines (loader + envelope)
+  cornerTopRight: "",
+  cornerBottomLeft: "",
+  cornerBottomRight: "",
+  cornerOverlayTopLeft: "", // floral corner layered over the top vines (loader + envelope)
+  cornerOverlayTopRight: "",
+  headerOrnament: "", // small sprig above titles
+  footerVine: "", // long vine at section ends
+  sideLeft: "", // love story side sprigs
+  sideRight: "",
 }
 
 // The four corners as one set
@@ -490,7 +490,7 @@ export const siteConfig = {
       bride: COUPLE_PORTRAITS.bride,
     },
     // Bouquet tucked inside the open envelope, peeking out on both sides ("" to hide)
-    envelopeFlowers: "deco/new-deco/bottom-L.png",
+    envelopeFlowers: "",
     // Main page cover photo (home hero, plain display) — one natural, candid couple photo
     coverPhoto: COUPLE_PORTRAITS.cover,
     coverPhotoAlt: COUPLE_LABEL,
